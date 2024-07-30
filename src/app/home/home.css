@@ -1,0 +1,59 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("../../images/mars.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  font-size: 2rem;
+  font-weight: 500;
+  max-width: 800px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.team-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    height: 100vh; /* Set a fixed height on mobile */
+    background-size: auto 100%; /* Maintain aspect ratio, fit height */
+    background-position: center;
+    padding: 10px;
+  }
+
+  .content-wrapper {
+    font-size: 1.2rem;
+    padding: 15px;
+    max-width: 90%; /* Limit width on smaller screens */
+  }
+
+  .team-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-wrapper {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .team-title {
+    font-size: 1.5rem;
+  }
+}

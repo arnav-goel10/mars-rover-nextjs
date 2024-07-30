@@ -1,0 +1,54 @@
+.gradient-transparent {
+  top: 0px;
+  background: linear-gradient(
+    rgb(0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 65%,
+    rgba(0, 0, 0, 0.2) 92%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-item .nav-link {
+  color: "white";
+  font-size: 1.5rem;
+  padding: 0rem 0rem;
+  font-weight: bold;
+  margin: 0rem 1.1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-item .nav-link::before {
+  content: "";
+  position: absolute;
+  top: -25%; /* Adjust top position as needed */
+  bottom: -25%; /* Adjust bottom position as needed */
+  left: -7.5%; /* Adjust left position as needed */
+  right: -7.5%; /* Adjust right position as needed */
+  background-color: transparent; /* Initial background color */
+  border-radius: 10px; /* Rounded corners */
+  transition: background-color 0.5s ease; /* Smooth transition for background color */
+  z-index: -1; /* Ensure the pseudo-element is behind the text */
+}
+
+.nav-item .nav-link:hover::before {
+  background-color: rgba(70, 68, 68, 0.45); /* Dark grey background on hover */
+}
+
+@media (max-width: 767px) {
+  .nav-item .nav-link:hover::before {
+    background-color: transparent; /* Remove background highlight on hover for mobile devices */
+  }
+  .nav-item .nav-link {
+    margin: 0.4rem 0rem; /* Adjust the margin as needed */
+  }
+
+  .gradient-transparent {
+    top: 0px;
+    background: rgb(0, 0, 0, 0.9);
+  }
+}

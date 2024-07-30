@@ -10,14 +10,28 @@
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
+  background-color: black;
 }
-
+.team-title,
+.about-us {
+  background: linear-gradient(
+    rgb(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.1) 25%,
+    rgba(0, 0, 0, 0.1) 75%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
 .content-wrapper {
   font-size: 2rem;
   font-weight: 500;
   max-width: 800px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0);
+  background: linear-gradient(
+    rgb(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.3) 25%,
+    rgba(0, 0, 0, 0.3) 75%,
+    rgba(0, 0, 0, 0) 100%
+  );
   color: white;
   padding: 20px;
   border-radius: 10px;

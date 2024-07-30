@@ -6,10 +6,14 @@ const page = () => {
     <>
       <div className="home-container">
         <div className="content-wrapper">
-          <div className="team-title">MARS ROVER TEAM</div>
-          10+ year old student-led team incubated at IIT Bombay which aims to
-          build rovers that are capable of performing extra-terrestrial
-          robotics, capable of autonomous traversal and, perform
+          <div className="team-title">Team Endeavour</div>
+          <div className="about-us">
+            We bring together a growing team of dedicated individuals from the
+            diverse fields of Engineering, Science, Design and Business to
+            design the next generation of Martian rovers and represent the
+            National University of Singapore at international robotics
+            competitions.
+          </div>
         </div>
       </div>
     </>

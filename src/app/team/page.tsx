@@ -3,6 +3,7 @@ import React from "react";
 import { teamMembersList } from "@/data/teamMembersList";
 import "@/components/starbg/starbg.css";
 import "./team.css";
+import random from "@/images/random.png";
 import TeamCard from "@/components/teamcard/TeamCard";
 
 const page = () => {
@@ -28,7 +29,7 @@ const page = () => {
           <div key={index} className="team-card-wrapper">
             <TeamCard
               key={index}
-              image={member.image}
+              image={random}
               name={member.name}
               designation={member.designation}
               linkedin={member.linkedin}

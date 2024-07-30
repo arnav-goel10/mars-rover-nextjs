@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import logo from "../../images/logo.png";
+import logo from "@/images/logo.png";
 import "./navbar.css";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import Link from "next/link";

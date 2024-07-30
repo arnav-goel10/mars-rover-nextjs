@@ -33,7 +33,7 @@ const NavBar = () => {
               <Nav.Item>
                 <Nav.Link
                   as={Link}
-                  href="home"
+                  href="/home"
                   className="custom-nav-link"
                   aria-current="page"
                   active
@@ -44,7 +44,7 @@ const NavBar = () => {
               <Nav.Item>
                 <Nav.Link
                   as={Link}
-                  href="team"
+                  href="/team"
                   className="custom-nav-link"
                   aria-current="page"
                   active
@@ -59,26 +59,26 @@ const NavBar = () => {
                 data-bs-theme="dark"
                 active
               >
-                <NavDropdown.Item as={Link} href="subsystems/mechanical">
+                <NavDropdown.Item as={Link} href="/subsystems/mechanical">
                   Mechanical & Manufacturing
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} href="subsystems/electronics">
+                <NavDropdown.Item as={Link} href="/subsystems/electronics">
                   Electronics & Control
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} href="subsystems/software">
+                <NavDropdown.Item as={Link} href="/subsystems/software">
                   Software
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} href="subsystems/science">
+                <NavDropdown.Item as={Link} href="/subsystems/science">
                   Science
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} href="subsystems/business">
+                <NavDropdown.Item as={Link} href="/subsystems/business">
                   Business & Media
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Item>
                 <Nav.Link
                   as={Link}
-                  href="sponsorships"
+                  href="/sponsorships"
                   className="custom-nav-link"
                   aria-current="page"
                   active
@@ -89,7 +89,7 @@ const NavBar = () => {
               <Nav.Item>
                 <Nav.Link
                   as={Link}
-                  href="contact"
+                  href="/contact"
                   className="custom-nav-link"
                   aria-current="page"
                   active

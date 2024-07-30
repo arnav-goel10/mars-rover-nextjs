@@ -1,8 +1,9 @@
 import React from "react";
 import "./teamcard.css";
+import { StaticImageData } from "next/image";
 
 interface TeamCardProps {
-  image: string;
+  image: StaticImageData | string;
   name: string;
   designation: string;
   linkedin?: string;

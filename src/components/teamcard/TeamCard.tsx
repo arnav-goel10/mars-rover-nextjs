@@ -3,7 +3,7 @@ import "./teamcard.css";
 import { StaticImageData } from "next/image";
 
 interface TeamCardProps {
-  image: StaticImageData | string;
+  image: string | StaticImageData;
   name: string;
   designation: string;
   linkedin?: string;

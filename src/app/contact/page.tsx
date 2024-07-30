@@ -75,7 +75,9 @@ const Contact: React.FC = () => {
           noValidate
           style={{ padding: "10% 20%" }}
         >
-          <h2 className="text-center mb-4">Contact Us</h2>
+          <h2 className="text-center mb-4" style={{ color: "white" }}>
+            Contact Us
+          </h2>
 
           <div className="col-md-3">
             <label htmlFor="validationCustom01" className="form-label">

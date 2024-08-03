@@ -32,7 +32,7 @@
 }
 
 .footer-column a:hover {
-  color: grey; /* Color of icons when hovered */
+  color: #a0a0a0; /* Color of icons when hovered */
 }
 
 /* Responsive design for mobile screens */

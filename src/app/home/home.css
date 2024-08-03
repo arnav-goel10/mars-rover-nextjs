@@ -16,6 +16,10 @@
   background-image: url("../../images/mars.png");
 }
 
+.sign-img {
+  background-image: url("../../images/vision.png");
+}
+
 .team-title,
 .about-us {
   background: linear-gradient(

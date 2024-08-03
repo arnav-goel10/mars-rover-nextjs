@@ -1,3 +1,4 @@
+"use client"; // Add this line at the top of the file
 import React from "react";
 import "./home.css";
 
@@ -16,6 +17,7 @@ const page = () => {
           </div>
         </div>
       </div>
+      <div className="home-container">+</div>
     </>
   );
 };

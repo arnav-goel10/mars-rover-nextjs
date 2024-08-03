@@ -4,3 +4,34 @@ body {
   background-color: black;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
 }
+:root {
+  --primary: #000000; /* Black background */
+  --secondary: #ffffff; /* White scrollbar */
+  --tertiary: #ffffff; /* White scrollbar on hover */
+}
+
+body {
+  background-color: black;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 14px;
+  border: 3px solid var(--primary);
+}
+
+/* Hide scrollbar arrows */
+*::-webkit-scrollbar-button {
+  display: none;
+}

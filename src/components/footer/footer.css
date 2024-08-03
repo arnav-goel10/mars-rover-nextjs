@@ -1,0 +1,51 @@
+.footer-container {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 15px;
+  border-top: 1px solid white;
+}
+
+.footer-heading {
+  font-size: 2em; /* Large font size for larger screens */
+  margin-bottom: 20px;
+}
+
+.footer-columns {
+  display: flex;
+  flex-direction: column; /* Stack columns vertically */
+  align-items: center; /* Center columns horizontally */
+  gap: 20px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: row; /* Keep icons side by side */
+  justify-content: center;
+  gap: 15px; /* Space between icons */
+}
+
+.footer-column a {
+  color: white; /* Default color of icons */
+  transition: color 0.5s ease; /* Smooth transition for color change */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.footer-column a:hover {
+  color: grey; /* Color of icons when hovered */
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 600px) {
+  .footer-heading {
+    font-size: 1.5em; /* Smaller font size for smaller screens */
+  }
+
+  .footer-columns {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .footer-column {
+    gap: 10px; /* Adjust space between icons on smaller screens */
+  }
+}

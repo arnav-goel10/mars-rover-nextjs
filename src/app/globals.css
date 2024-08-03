@@ -2,4 +2,5 @@ html,
 body {
   color: "white";
   background-color: black;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
 }

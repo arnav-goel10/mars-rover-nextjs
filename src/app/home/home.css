@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url("../../images/mars.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -12,6 +11,11 @@
   box-sizing: border-box;
   background-color: black;
 }
+
+.mars-img {
+  background-image: url("../../images/mars.png");
+}
+
 .team-title,
 .about-us {
   background: linear-gradient(

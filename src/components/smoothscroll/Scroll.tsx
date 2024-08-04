@@ -6,7 +6,7 @@ const SmoothScroll: React.FC = () => {
     const handleWheel = (event: WheelEvent) => {
       event.preventDefault();
       window.scrollBy({
-        top: event.deltaY * 0.25, // Adjust the multiplier to control the speed
+        top: event.deltaY * 0.5, // Adjust the multiplier to control the speed
         behavior: "smooth",
       });
     };

@@ -19,9 +19,9 @@ const page = () => {
         </div>
       </div>
       <div className="home-container sign-img">
-        <div className="content-wrapper">
-          <div className="about-us"></div>
-        </div>
+        {/* <div className="content-wrapper">
+         
+        </div> */}
       </div>
     </>
   );

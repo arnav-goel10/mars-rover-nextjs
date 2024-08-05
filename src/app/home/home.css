@@ -1,3 +1,7 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+
 .home-container {
   display: flex;
   justify-content: center;
@@ -10,10 +14,8 @@
   padding: 20px;
   box-sizing: border-box;
   background-color: black;
-}
-
-.home-container:not(:first-child) {
-  opacity: 0;
+  /* scroll-snap-type: y mandatory; */
+  scroll-snap-align: start;
 }
 
 .mars {

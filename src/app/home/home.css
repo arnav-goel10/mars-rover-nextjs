@@ -16,7 +16,6 @@
   background-image: url("../../images/mars.png");
 }
 
-.team-title,
 .about-us {
   background: linear-gradient(
     rgb(0, 0, 0, 0) 0%,
@@ -41,11 +40,6 @@
   border-radius: 10px;
 }
 
-.team-title {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
 @media (max-width: 768px) {
   .home-container {
     height: 100vh; /* Set a fixed height on mobile */
@@ -59,19 +53,11 @@
     padding: 15px;
     max-width: 90%; /* Limit width on smaller screens */
   }
-
-  .team-title {
-    font-size: 2rem;
-  }
 }
 
 @media (max-width: 480px) {
   .content-wrapper {
     font-size: 1rem;
     padding: 10px;
-  }
-
-  .team-title {
-    font-size: 1.5rem;
   }
 }

@@ -1,7 +1,6 @@
 "use client"; // Add this line at the top of the file
 import React from "react";
 import "./home.css";
-import mars from "../../images/mars.png";
 
 const page = () => {
   return (

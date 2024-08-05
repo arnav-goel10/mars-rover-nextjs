@@ -1,39 +1,10 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import createScrollSnap from "scroll-snap";
 import "./home.css";
 
-const Page = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (containerRef.current) {
-      const { bind, unbind } = createScrollSnap(
-        containerRef.current,
-        {
-          snapDestinationX: "0%",
-          snapDestinationY: "50%",
-          timeout: 100,
-          duration: 300,
-          threshold: 0.9,
-          snapStop: false,
-          easing: (t: number) => (t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t), // easeInOutQuad
-        },
-        () => console.log("element snapped")
-      );
-
-      // Bind the scroll snap
-      bind();
-
-      // Cleanup function to unbind the scroll snap when component unmounts
-      return () => {
-        unbind();
-      };
-    }
-  }, []);
-
+const page = () => {
   return (
-    <div ref={containerRef}>
+    <>
       <div className="home-container mars">
         <div className="mars-wrapper">
           <div className="about-us">
@@ -48,8 +19,8 @@ const Page = () => {
       <div className="home-container">
         <div className="vision-wrapper"></div>
       </div>
-    </div>
+    </>
   );
 };
 
-export default Page;
+export default page;

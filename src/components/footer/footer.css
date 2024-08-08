@@ -1,9 +1,27 @@
-.footer-container {
-  background-color: black;
+/* styles/footer.css */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: black;
   color: white;
   text-align: center;
   padding: 20px 15px;
   border-top: 1px solid white;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  transform: translateY(100%); /* Initially hidden */
+  opacity: 0; /* Initially hidden */
+}
+
+.footer.show {
+  transform: translateY(0); /* Slide into view */
+  opacity: 1; /* Make visible */
+}
+
+.footer.hide {
+  transform: translateY(100%); /* Slide out of view */
+  opacity: 0; /* Hide */
 }
 
 .footer-heading {

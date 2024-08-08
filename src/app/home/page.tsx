@@ -1,7 +1,35 @@
-import React from "react";
-import "./home.css";
+// pages/index.js or components/Page.js
+"use client";
+import React, { useEffect, useState } from "react";
 
-const page = () => {
+import "./home.css"; // Import the CSS file for styles
+import Footer from "@/components/footer/Footer";
+
+const Page = () => {
+  const [showFooter, setShowFooter] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const container = document.getElementById("scroll");
+      if (container) {
+        const isAtBottom =
+          container.scrollHeight - container.scrollTop ===
+          container.clientHeight;
+        if (isAtBottom) {
+          setShowFooter(true);
+        } else {
+          setShowFooter(false);
+        }
+      }
+    };
+
+    const container = document.getElementById("scroll");
+    if (container) {
+      container.addEventListener("scroll", handleScroll);
+      return () => container.removeEventListener("scroll", handleScroll);
+    }
+  }, []);
+
   return (
     <div id="scroll">
       <section className="mars-section">
@@ -20,8 +48,9 @@ const page = () => {
           <div className="vision-content">test</div>
         </div>
       </section>
+      <Footer isVisible={showFooter} />
     </div>
   );
 };
 
-export default page;
+export default Page;

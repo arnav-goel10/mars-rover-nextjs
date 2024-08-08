@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.css";
 
-const Page = () => {
+const page = () => {
   return (
     <div id="scroll">
       <section className="mars-section">
@@ -24,4 +24,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default page;

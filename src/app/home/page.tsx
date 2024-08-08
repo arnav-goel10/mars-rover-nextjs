@@ -48,6 +48,11 @@ const Page = () => {
           <div className="vision-content">test</div>
         </div>
       </section>
+      <section className="vision-section">
+        <div className="content-wrapper">
+          <div className="vision-content">test</div>
+        </div>
+      </section>
       <Footer isVisible={showFooter} />
     </div>
   );

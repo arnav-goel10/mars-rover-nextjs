@@ -1,8 +1,12 @@
 #scroll {
   scroll-snap-type: y mandatory;
   height: 100vh;
-  overflow-y: scroll; /* Allow vertical scrolling */
+  overflow-y: auto; /* Allow vertical scrolling */
   -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+#scroll::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 section {

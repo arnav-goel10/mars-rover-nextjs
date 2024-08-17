@@ -58,7 +58,35 @@ section {
 }
 
 .vision-content {
-  /* Add styles specific to the vision content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.vision-content .text-container {
+  max-width: 50%;
+}
+
+.vision-content h2 {
+  position: relative;
+  margin-bottom: 20px; /* Space between the heading and the line */
+  padding-bottom: 10px; /* Adjusts the space between the heading text and the line */
+}
+
+.vision-content h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Line spans the full width of the text container */
+  height: 4px; /* Thickness of the line */
+  background-color: #fff; /* Color of the line (white) */
+}
+
+.vision-content img {
+  max-width: 40%;
+  height: auto;
 }
 
 @media (max-width: 768px) {

@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 
 import "./home.css"; // Import the CSS file for styles
 import Footer from "@/components/footer/Footer";
+import "../../images/vision.png";
 
 const Page = () => {
   const [showFooter, setShowFooter] = useState(false);
@@ -45,7 +46,19 @@ const Page = () => {
       </section>
       <section className="vision-section">
         <div className="content-wrapper">
-          <div className="vision-content">test</div>
+          <div className="vision-content">
+            <div className="text-container">
+              <h2>Mission</h2>
+              <p>
+                To be the first Singaporean & South East Asian team to qualify &
+                win the University Rover Challenge 2025.
+              </p>
+            </div>
+            <img
+              src="https://img.freepik.com/premium-photo/mission-vision-mission-print-screen-wooden-block-company-business-statement-concept_50039-4121.jpg?size=626&ext=jpg"
+              alt="Your Image Description"
+            />
+          </div>
         </div>
       </section>
       <section className="vision-section">
@@ -53,6 +66,7 @@ const Page = () => {
           <div className="vision-content">test</div>
         </div>
       </section>
+
       <Footer isVisible={showFooter} />
     </div>
   );

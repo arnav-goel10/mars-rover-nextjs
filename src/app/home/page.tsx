@@ -1,14 +1,14 @@
-// pages/index.js or components/Page.js
 "use client";
-import React, { useEffect, useState } from "react";
-
-import "./home.css"; // Import the CSS file for styles
+import React, { useEffect, useState, useRef } from "react";
+import "./home.css";
 import Footer from "@/components/footer/Footer";
 import vision from "../../images/vision.png";
 import Image from "next/image";
 
 const Page = () => {
   const [showFooter, setShowFooter] = useState(false);
+  const visionRef1 = useRef<HTMLDivElement>(null);
+  const visionRef2 = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,12 +17,15 @@ const Page = () => {
         const isAtBottom =
           container.scrollHeight - container.scrollTop ===
           container.clientHeight;
-        if (isAtBottom) {
-          setShowFooter(true);
-        } else {
-          setShowFooter(false);
-        }
+        setShowFooter(isAtBottom);
       }
+
+      // Check if vision sections are in view
+      [visionRef1, visionRef2].forEach((ref) => {
+        if (ref.current && isElementInViewport(ref.current)) {
+          ref.current.classList.add("animate");
+        }
+      });
     };
 
     const container = document.getElementById("scroll");
@@ -31,6 +34,17 @@ const Page = () => {
       return () => container.removeEventListener("scroll", handleScroll);
     }
   }, []);
+
+  const isElementInViewport = (el: HTMLElement) => {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  };
 
   return (
     <div id="scroll">
@@ -55,21 +69,25 @@ const Page = () => {
                 win the University Rover Challenge 2025.
               </p>
             </div>
-            <Image
-              src={vision}
-              alt="Your Image Description"
-              width={300}
-              height={200}
-            />
+            <div ref={visionRef1} className="image-container">
+              <Image
+                src={vision}
+                alt="Your Image Description"
+                width={300}
+                height={250}
+              />
+            </div>
           </div>
 
           <div className="vision-content">
-            <Image
-              src={vision}
-              alt="Your Second Image Description"
-              width={300}
-              height={200}
-            />
+            <div ref={visionRef2} className="image-container">
+              <Image
+                src={vision}
+                alt="Your Second Image Description"
+                width={300}
+                height={250}
+              />
+            </div>
             <div className="text-container">
               <h2>Vision</h2>
               <p style={{ fontSize: "1.1rem" }}>

@@ -55,9 +55,27 @@ const Page = () => {
               </p>
             </div>
             <img
-              src="https://img.freepik.com/premium-photo/mission-vision-mission-print-screen-wooden-block-company-business-statement-concept_50039-4121.jpg?size=626&ext=jpg"
+              src="https://img.freepik.com/premium-photo/closeup-picture-text-mission-vision_875000-69.jpg?size=626&ext=jpg"
               alt="Your Image Description"
+              width={300}
             />
+          </div>
+
+          <div className="vision-content">
+            <img
+              src="https://img.freepik.com/premium-photo/closeup-picture-text-mission-vision_875000-69.jpg?size=626&ext=jpg"
+              alt="Your Second Image Description"
+              width={300}
+            />
+            <div className="text-container">
+              <h2>Vision</h2>
+              <p style={{ fontSize: "1.1rem" }}>
+                Akin to the pioneering rovers on Mars, our team&apos;s spirit
+                embodies the values of Curiosity, Perseverance, and Ingenuity.
+                We strive to explore, innovate, and overcome adversities just as
+                our robotic counterparts do on the Red Planet.
+              </p>
+            </div>
           </div>
         </div>
       </section>

@@ -29,7 +29,7 @@ section {
 }
 
 .vision-section {
-  /* Add any background styles specific to the vision section if needed */
+  padding-top: 125px;
 }
 
 .content-wrapper {
@@ -65,7 +65,12 @@ section {
 }
 
 .vision-content .text-container {
-  max-width: 50%;
+  flex: 0 0 50%; /* Keeps the text container size fixed at 50% */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.4rem;
 }
 
 .vision-content h2 {
@@ -78,14 +83,15 @@ section {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%; /* Line spans the full width of the text container */
+  left: 50%; /* Centers the line under the heading */
+  transform: translateX(-50%); /* Ensures the line is perfectly centered */
+  width: 100%;
   height: 4px; /* Thickness of the line */
   background-color: #fff; /* Color of the line (white) */
 }
 
 .vision-content img {
-  max-width: 40%;
+  flex: 0 0 40%; /* Keeps the image container size fixed at 40% */
   height: auto;
 }
 

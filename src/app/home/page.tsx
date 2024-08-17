@@ -4,7 +4,8 @@ import React, { useEffect, useState } from "react";
 
 import "./home.css"; // Import the CSS file for styles
 import Footer from "@/components/footer/Footer";
-import "../../images/vision.png";
+import vision from "../../images/vision.png";
+import Image from "next/image";
 
 const Page = () => {
   const [showFooter, setShowFooter] = useState(false);
@@ -54,18 +55,20 @@ const Page = () => {
                 win the University Rover Challenge 2025.
               </p>
             </div>
-            <img
-              src="https://img.freepik.com/premium-photo/closeup-picture-text-mission-vision_875000-69.jpg?size=626&ext=jpg"
+            <Image
+              src={vision}
               alt="Your Image Description"
               width={300}
+              height={200}
             />
           </div>
 
           <div className="vision-content">
-            <img
-              src="https://img.freepik.com/premium-photo/closeup-picture-text-mission-vision_875000-69.jpg?size=626&ext=jpg"
+            <Image
+              src={vision}
               alt="Your Second Image Description"
               width={300}
+              height={200}
             />
             <div className="text-container">
               <h2>Vision</h2>

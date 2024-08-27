@@ -59,20 +59,26 @@ const NavBar = () => {
                 data-bs-theme="dark"
                 active
               >
-                <NavDropdown.Item as={Link} href="/subsystems/mechanical">
-                  Mechanical & Manufacturing
+                <NavDropdown.Item as={Link} href="/subsystems/autonav">
+                  AutoNav
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} href="/subsystems/electronics">
-                  Electronics & Control
+                <NavDropdown.Item as={Link} href="/subsystems/delivery">
+                  Delivery
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} href="/subsystems/software">
-                  Software
+                <NavDropdown.Item as={Link} href="/subsystems/robotic_arm">
+                  Robotic Arm
                 </NavDropdown.Item>
                 <NavDropdown.Item as={Link} href="/subsystems/science">
                   Science
                 </NavDropdown.Item>
+                <NavDropdown.Item as={Link} href="/subsystems/communication">
+                  Communication
+                </NavDropdown.Item>
                 <NavDropdown.Item as={Link} href="/subsystems/business">
-                  Business & Media
+                  Business
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} href="/subsystems/public_relations">
+                  Public Relations
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Item>

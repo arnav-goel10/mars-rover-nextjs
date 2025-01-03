@@ -34,10 +34,10 @@ section {
 
 .content-wrapper {
   width: 100%;
-  max-width: 800px; /* Optional: Limit the content width */
+  max-width: 800px;
   text-align: left;
   color: white;
-  margin: 160px 0 0 -400px;
+  margin: 160px 0 0 -400px; /* Default for larger screens */
 }
 
 .mars-heading {
@@ -57,6 +57,7 @@ section {
   display: flex;
   gap: 1.5rem;
   justify-content: flex-start; /* Left-align buttons */
+  flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
 }
 
 .button {
@@ -93,29 +94,58 @@ section {
 @media (max-width: 768px) {
   .mars-heading {
     font-size: 2.5rem;
+    line-height: 1.2; /* Add more spacing for smaller screens */
   }
 
   .mars-subheading {
     font-size: 1.25rem;
   }
 
+  .content-wrapper {
+    margin: 100px 0 0 -200px; /* Adjust margin for tablets */
+  }
+
   .button {
-    padding: 0.7rem 1.2rem;
-    font-size: 0.9rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .mars-heading {
     font-size: 2rem;
+    line-height: 1.2; /* Ensure readability on small screens */
+  }
+
+  .mars-section {
+    padding: 20px;
+    background-size: cover; /* Ensure the image still covers the viewport */
+    background-position: top center; /* Adjust image position */
+  }
+
+  section {
+    height: 100vh; /* Ensure each section occupies the full screen */
+    flex-direction: column; /* Stack content vertically */
+    margin: auto;
   }
 
   .mars-subheading {
     font-size: 1rem;
   }
 
+  .content-wrapper {
+    margin: 50px 0 0 0; /* Center align for phones */
+    max-width: 100%; /* Full width for small screens */
+  }
+
   .button {
     padding: 0.6rem 1rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .button-group {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: flex-start; /* Left-align buttons */
+    gap: 1rem; /* Adjust spacing between buttons */
   }
 }

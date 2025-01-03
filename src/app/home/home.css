@@ -26,7 +26,10 @@ section {
 }
 
 .mars-section {
-  background-image: url("../../images/mars.png");
+  background-image: url("../../images/mars_new.avif");
+  background-size: 72% auto;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .vision-section {

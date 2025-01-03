@@ -175,35 +175,29 @@ section {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .mars-heading {
-    font-size: 2.5rem;
-    line-height: 1.2; /* Add more spacing for smaller screens */
-  }
-
-  .goals-header {
-    font-size: 1.25rem; /* Smaller font size for tablets */
-    padding: 8px 16px;
-  }
-
   .goals-content {
-    max-width: 90%; /* Reduce width for smaller screens */
+    max-width: 90%; /* Reduce width for tablets */
     padding: 15px;
   }
 
   .section-title {
-    font-size: 1.5rem; /* Adjust heading size */
+    font-size: 1.5rem; /* Adjust title size */
   }
 
   .section-text {
     font-size: 1rem; /* Adjust paragraph size */
+    line-height: 1.5; /* Improve readability */
   }
 
-  .mars-subheading {
-    font-size: 1.25rem;
+  .mars-section {
+    padding: 20px;
+    background-size: 80%;
+    background-position: top center;
   }
 
   .content-wrapper {
-    margin: 100px 0 0 -200px; /* Adjust margin for tablets */
+    margin-top: -5%;
+    margin-left: 10%;
   }
 
   .button {
@@ -214,21 +208,24 @@ section {
 
 @media (max-width: 480px) {
   .goals-header {
-    font-size: 1rem; /* Even smaller font size for phones */
-    padding: 6px 12px;
+    font-size: 2.5rem;
   }
 
   .goals-content {
-    max-width: 100%; /* Full width for very small screens */
+    max-width: 95%; /* Further reduce width for small phones */
     padding: 10px;
+    margin-top: -30px;
+    margin-right: 10px;
+    max-width: fit-content;
   }
 
   .section-title {
-    font-size: 1.25rem; /* Further reduce heading size */
+    font-size: 1.25rem;
   }
 
   .section-text {
-    font-size: 0.9rem; /* Reduce paragraph size */
+    font-size: 1.15rem;
+    line-height: 1.4; /* Ensure text fits within the screen */
   }
 
   .mars-heading {

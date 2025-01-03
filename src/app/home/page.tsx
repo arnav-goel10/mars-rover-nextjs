@@ -1,45 +1,43 @@
 "use client";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import "./home.css";
 import Footer from "@/components/footer/Footer";
 import NavBar from "@/components/navbar/NavBar";
 
 const Page = () => {
   const [showFooter, setShowFooter] = useState(false);
-  const visionRef1 = useRef<HTMLDivElement>(null);
-  const visionRef2 = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     const handleScroll = () => {
       const container = document.getElementById("scroll");
-      if (container) {
+      const navbar = document.querySelector(".navbar"); // Select the navbar element
+      const firstSection = document.querySelector(".mars-section");
+
+      if (container && navbar && firstSection) {
+        // Check if at bottom to show footer
         const isAtBottom =
           container.scrollHeight - container.scrollTop ===
           container.clientHeight;
         setShowFooter(isAtBottom);
-      }
-      // Check if vision sections are in view
-      [visionRef1, visionRef2].forEach((ref) => {
-        if (ref.current && isElementInViewport(ref.current)) {
-          ref.current.classList.add("animate");
+
+        // Check if the first section is in view
+        const rect = firstSection.getBoundingClientRect();
+        if (rect.top >= 0 && rect.bottom >= window.innerHeight / 2) {
+          navbar.classList.add("visible");
+          navbar.classList.remove("hidden");
+        } else {
+          navbar.classList.add("hidden");
+          navbar.classList.remove("visible");
         }
-      });
+      }
     };
+
     const container = document.getElementById("scroll");
     if (container) {
       container.addEventListener("scroll", handleScroll);
       return () => container.removeEventListener("scroll", handleScroll);
     }
   }, []);
-  const isElementInViewport = (el: HTMLElement) => {
-    const rect = el.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  };
 
   return (
     <>

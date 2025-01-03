@@ -6,6 +6,30 @@
   -webkit-overflow-scrolling: touch;
 }
 
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  color: white;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Navbar visible: Slide in */
+.navbar.visible {
+  transform: translateY(0); /* Fully visible */
+  opacity: 1; /* Fully opaque */
+}
+
+/* Navbar hidden: Slide out */
+.navbar.hidden {
+  transform: translateY(-100%); /* Slide out above the viewport */
+  opacity: 0; /* Fully transparent */
+  pointer-events: none; /* Disable interactions */
+}
+
 #scroll::-webkit-scrollbar {
   display: none;
 }

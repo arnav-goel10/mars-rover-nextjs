@@ -11,8 +11,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
-  color: white;
   z-index: 1000;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
@@ -61,7 +59,7 @@ section {
   max-width: 800px;
   text-align: left;
   color: white;
-  margin: 160px 0 0 -400px; /* Default for larger screens */
+  margin: 160px 0 0 -400px;
 }
 
 .mars-heading {
@@ -80,8 +78,8 @@ section {
 .button-group {
   display: flex;
   gap: 1.5rem;
-  justify-content: flex-start; /* Left-align buttons */
-  flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .button {
@@ -162,18 +160,16 @@ section {
   position: absolute;
 }
 
-/* Section Title */
 .section-title {
-  font-size: 2rem; /* Adjust heading size */
+  font-size: 2rem;
   font-weight: 900;
-  margin-bottom: 0.5rem; /* Spacing below the heading */
+  margin-bottom: 0.5rem;
 }
 
-/* Section Text */
 .section-text {
-  font-size: 1.25rem; /* Paragraph text size */
-  line-height: 1.6; /* Line spacing for readability */
-  margin-bottom: 2rem; /* Spacing below paragraphs */
+  font-size: 1.27rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
   left: 15%;
 }
 

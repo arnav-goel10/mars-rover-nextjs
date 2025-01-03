@@ -64,22 +64,31 @@ const Page = () => {
 
       <section>
         <div className="content-wrapper">
-          <h2>Mission</h2>
-          <p>
+          <h2>Test</h2>
+          <p style={{ fontSize: "1.1rem" }}>LOREM IPSUM</p>
+        </div>
+      </section>
+      <section className="goals-section">
+        <div className="goals-header">
+          <h2>Our Goals</h2>
+        </div>
+        <div className="content-wrapper">
+          <h2 className="section-title">Mission</h2>
+          <p className="section-text">
             To be the first Singaporean & South East Asian team to qualify & win
             the University Rover Challenge 2025.
           </p>
 
-          <h2>Vision</h2>
-          <p style={{ fontSize: "1.1rem" }}>
+          <h2 className="section-title">Vision</h2>
+          <p className="section-text">
             Akin to the pioneering rovers on Mars, our team&apos;s spirit
             embodies the values of Curiosity, Perseverance, and Ingenuity. We
-            strive to explore, innovate, and overcome adversities just as our
-            robotic counterparts do on the Red Planet.
+            strive to explore, innovate, and overcome adversities like our
+            robotic counterparts on the Red Planet.
           </p>
         </div>
       </section>
-      <section> test lomao</section>
+
       <section> test 2222</section>
 
       <Footer isVisible={showFooter} />

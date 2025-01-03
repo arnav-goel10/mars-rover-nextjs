@@ -21,9 +21,15 @@ const Page = () => {
           container.clientHeight;
         setShowFooter(isAtBottom);
 
-        // Check if the first section is in view
+        // Get the bounding rectangle of the first section
         const rect = firstSection.getBoundingClientRect();
-        if (rect.top >= 0 && rect.bottom >= window.innerHeight / 2) {
+        const windowHeight = window.innerHeight;
+
+        // Check if a significant portion of the first section is visible
+        const isFirstSectionVisible =
+          rect.top < windowHeight * 0.7 && rect.bottom > windowHeight * 0.3;
+
+        if (isFirstSectionVisible) {
           navbar.classList.add("visible");
           navbar.classList.remove("hidden");
         } else {

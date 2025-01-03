@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import "./home.css";
 import Footer from "@/components/footer/Footer";
 import NavBar from "@/components/navbar/NavBar";
+import Link from "next/link";
 
 const Page = () => {
   const [showFooter, setShowFooter] = useState(false);
@@ -53,12 +54,12 @@ const Page = () => {
               Bringing Innovative Solutions for Mars Exploration
             </p>
             <div className="button-group">
-              <a href="/contact" className="button button-dark">
+              <Link href="/contact" className="button button-dark">
                 Join Us
-              </a>
-              <a href="/subsystems" className="button button-outline">
+              </Link>
+              <Link href="/subsystems" className="button button-outline">
                 Explore Our Subsystems
-              </a>
+              </Link>
             </div>
           </div>
         </section>

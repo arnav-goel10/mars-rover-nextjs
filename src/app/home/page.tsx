@@ -69,11 +69,12 @@ const Page = () => {
             <p style={{ fontSize: "1.1rem" }}>LOREM IPSUM</p>
           </div>
         </section>
+
         <section className="goals-section">
           <div className="goals-header">
-            <h2>Our Goals</h2>
+            <h2 style={{ fontWeight: "600" }}>Our Goals</h2>
           </div>
-          <div className="content-wrapper">
+          <div className="goals-content">
             <h2 className="section-title">Mission</h2>
             <p className="section-text">
               To be the first Singaporean & South East Asian team to qualify &
@@ -86,6 +87,16 @@ const Page = () => {
               embodies the values of Curiosity, Perseverance, and Ingenuity. We
               strive to explore, innovate, and overcome adversities like our
               robotic counterparts on the Red Planet.
+            </p>
+
+            <h2 className="section-title">About URC</h2>
+            <p className="section-text">
+              The University Rover Challenge (URC) hosted by The Mars Society is
+              among the world&apos;s premier robotics competitions for
+              university students. Held annually in the desert of southern Utah,
+              United States, URC challenges student teams to ideate, design, and
+              fabricate Mars rovers that will one day work alongside astronauts
+              exploring the Red Planet.
             </p>
           </div>
         </section>

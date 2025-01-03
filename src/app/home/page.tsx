@@ -72,7 +72,7 @@ const Page = () => {
 
         <section className="goals-section">
           <div className="goals-header">
-            <h2 style={{ fontWeight: "600", fontSize: "3rem" }}>Our Goals</h2>
+            <h2 style={{ fontWeight: "9000", fontSize: "3rem" }}>Our Goals</h2>
           </div>
           <div className="goals-content">
             <h2 className="section-title">Mission</h2>

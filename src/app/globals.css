@@ -12,11 +12,6 @@ body {
   --tertiary: #ffffff; /* White scrollbar on hover */
 }
 
-body {
-  background-color: black;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
-}
-
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 12px;

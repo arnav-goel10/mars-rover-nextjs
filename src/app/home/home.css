@@ -295,8 +295,10 @@ details[open] summary {
   align-items: flex-start; /* Align details to the left */
   margin: 0 auto 0 15%; /* Center the container */
   padding: 20px;
+  max-height: 80vh;
   max-width: 800px; /* Set a width limit */
   gap: 2rem; /* Adjust spacing between details */
+  overflow: scroll;
 }
 
 /* Responsive Styles */

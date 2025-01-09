@@ -7,7 +7,7 @@
   background: black;
   color: white;
   text-align: center;
-  padding: 20px 15px;
+  padding: 12px 15px;
   border-top: 1px solid white;
   transition: transform 0.5s ease-out, opacity 0.5s ease-out;
   transform: translateY(100%); /* Initially hidden */
@@ -26,7 +26,7 @@
 
 .footer-heading {
   font-size: 2em; /* Large font size for larger screens */
-  margin-bottom: 20px;
+  margin-bottom: 2px;
 }
 
 .footer-columns {
@@ -41,6 +41,7 @@
   flex-direction: row; /* Keep icons side by side */
   justify-content: center;
   gap: 15px; /* Space between icons */
+  margin-bottom: 2px;
 }
 
 .footer-column a {

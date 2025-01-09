@@ -110,6 +110,8 @@ const Page = () => {
 
         <section> test 2222</section>
 
+        <section> test 2222</section>
+
         <Footer isVisible={showFooter} />
       </div>
     </>

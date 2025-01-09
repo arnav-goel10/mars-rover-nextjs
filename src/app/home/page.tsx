@@ -262,6 +262,9 @@ const Page = () => {
         </section>
 
         <section className="faq-section">
+          <div className="goals-header">
+            <h2 style={{ fontWeight: "900" }}>FAQ</h2>
+          </div>
           <details>
             <summary>
               What is the primary goal of the Mars Rover project?
@@ -339,8 +342,6 @@ const Page = () => {
             </li>
           </details>
         </section>
-
-        <section> test 2222</section>
 
         <Footer isVisible={showFooter} />
       </div>

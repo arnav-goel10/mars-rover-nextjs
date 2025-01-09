@@ -285,6 +285,10 @@ details[open] summary {
   color: #ffffff;
 }
 
+.faq-section {
+  position: relative;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .goals-content {

@@ -289,6 +289,16 @@ details[open] summary {
   position: relative;
 }
 
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align details to the left */
+  margin: 0 auto 0 15%; /* Center the container */
+  padding: 20px;
+  max-width: 800px; /* Set a width limit */
+  gap: 2rem; /* Adjust spacing between details */
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .goals-content {

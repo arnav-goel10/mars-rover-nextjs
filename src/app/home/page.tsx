@@ -46,7 +46,9 @@ const WheelControls: KeenSliderPlugin = (slider) => {
   }
 
   function eventWheel(e: WheelEvent) {
-    e.preventDefault();
+    if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
+      e.preventDefault();
+    }
     if (!wheelActive) {
       wheelStart(e);
       wheelActive = true;
@@ -69,7 +71,7 @@ const WheelControls: KeenSliderPlugin = (slider) => {
 const Page = () => {
   const [showFooter, setShowFooter] = useState(false);
 
-  const [sliderRef, slider] = useKeenSlider<HTMLDivElement>(
+  const [sliderRef] = useKeenSlider<HTMLDivElement>(
     {
       loop: true,
       mode: "free-snap",

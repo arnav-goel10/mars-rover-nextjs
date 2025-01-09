@@ -261,6 +261,30 @@ section {
   width: 80%;
 }
 
+details {
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+  color: #ffffff;
+}
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+  color: #ffffff;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 0.5em;
+  color: #ffffff;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .goals-content {

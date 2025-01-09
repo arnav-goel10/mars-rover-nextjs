@@ -261,7 +261,84 @@ const Page = () => {
           </div>
         </section>
 
-        <section> test 2222</section>
+        <section className="faq-section">
+          <details>
+            <summary>
+              What is the primary goal of the Mars Rover project?
+            </summary>
+            The primary goal of the Mars Rover project is to explore the surface
+            of Mars, study its geology, atmosphere, and potential for past or
+            present life, and gather data that will help prepare for future
+            human missions to the planet.
+          </details>
+          <details>
+            <summary>
+              How does the Mars Rover navigate the Martian surface?
+            </summary>
+            The Mars Rover is equipped with autonomous navigation systems that
+            allow it to move across Mars&apos; terrain. Using cameras, sensors,
+            and GPS-like navigation, it can avoid obstacles, select the best
+            paths, and conduct scientific missions with minimal input from
+            Earth.
+          </details>
+          <details>
+            <summary>How does the rover communicate with Earth?</summary>
+            The rover communicates via radio signals sent through relay
+            satellites orbiting Mars, which then transmit data to NASA’s Deep
+            Space Network on Earth. Depending on the distance between Mars and
+            Earth, communication can take anywhere from 4 to 24 minutes.
+          </details>
+
+          <details>
+            <summary>
+              What kind of experiments does the Mars Rover conduct?
+            </summary>
+            The Mars Rover conducts a variety of scientific experiments,
+            including:
+            <li>
+              Analyzing rock and soil samples to understand Mars&apos;
+              geological history.
+            </li>
+            <li>
+              Searching for signs of past water and conditions that could
+              support life.
+            </li>
+            <li>
+              Measuring atmospheric conditions like temperature, pressure, and
+              wind.
+            </li>
+            <li>
+              Testing technologies that could support future human exploration,
+              such as oxygen generation
+            </li>
+          </details>
+          <details>
+            <summary>Can the rover detect signs of life on Mars?</summary>
+            The rover is equipped to search for biosignatures—chemical and
+            geological indicators that life may have once existed on Mars.
+            However, direct detection of life remains a complex challenge, and
+            the rover&apos;s findings will contribute to ongoing research in
+            this area.
+          </details>
+          <details>
+            <summary>
+              What challenges does the Mars Rover face on the planet?
+            </summary>
+            The rover faces several challenges, including:
+            <li>
+              <b>Extreme temperatures</b>, which can drop to -80 degrees
+              Fahrenheit (-60°C) at night.
+            </li>
+            <li>
+              <b>Dust storms</b> that can obscure its solar panels and disrupt
+              its instruments.
+            </li>
+            <li>
+              <b>Rough terrain </b>that requires careful navigation to avoid
+              damage or getting stuck
+            </li>
+          </details>
+        </section>
 
         <section> test 2222</section>
 

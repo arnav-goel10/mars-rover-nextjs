@@ -4,9 +4,20 @@ import "./home.css";
 import Footer from "@/components/footer/Footer";
 import NavBar from "@/components/navbar/NavBar";
 import Link from "next/link";
+import "keen-slider/keen-slider.min.css";
+import { useKeenSlider } from "keen-slider/react";
 
 const Page = () => {
   const [showFooter, setShowFooter] = useState(false);
+
+  const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
+    loop: true,
+    mode: "free-snap",
+    slides: {
+      perView: 4,
+      spacing: 15,
+    },
+  });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -142,6 +153,14 @@ const Page = () => {
 
         <section className="explore-section">
           <div className="explore-header">Exploring Mars with Innovation</div>
+          <div ref={sliderRef} className="keen-slider">
+            <div className="keen-slider__slide number-slide1">1</div>
+            <div className="keen-slider__slide number-slide2">2</div>
+            <div className="keen-slider__slide number-slide3">3</div>
+            <div className="keen-slider__slide number-slide4">4</div>
+            <div className="keen-slider__slide number-slide5">5</div>
+            <div className="keen-slider__slide number-slide6">6</div>
+          </div>
         </section>
 
         <section> test 2222</section>

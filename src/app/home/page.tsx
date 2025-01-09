@@ -108,7 +108,26 @@ const Page = () => {
           </div>
         </section>
 
-        <section> test 2222</section>
+        <section className="subsystems-section">
+          <div className="goals-header">
+            <h2 style={{ fontWeight: "900" }}>Our Subsystems</h2>
+          </div>
+          <div className="subsystems-grid">
+            {[
+              { title: "Autonomous Navigation" },
+              { title: "Delivery Subsystem" },
+              { title: "Robotic Arm Subsystem" },
+              { title: "Science Subsystem" },
+              { title: "GNSS and Communications" },
+              { title: "Business and Media" },
+            ].map((subsystem, index) => (
+              <div className="subsystem-card" key={index}>
+                <h3 className="subsystem-title">{subsystem.title}</h3>
+                <button className="subsystem-button">Discover More</button>
+              </div>
+            ))}
+          </div>
+        </section>
 
         <section> test 2222</section>
 

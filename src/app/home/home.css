@@ -173,6 +173,14 @@ section {
   left: 15%;
 }
 
+.subsystems-section {
+  padding: 40px 20px;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .goals-content {

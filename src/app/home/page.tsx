@@ -140,6 +140,12 @@ const Page = () => {
           </div>
         </section>
 
+        <section className="explore-section">
+          <div className="explore-header">Exploring Mars with Innovation</div>
+        </section>
+
+        <section> test 2222</section>
+
         <section> test 2222</section>
 
         <Footer isVisible={showFooter} />

@@ -232,6 +232,26 @@ section {
   background-color: #cf7f1e;
 }
 
+.explore-section {
+  padding: 40px 20px;
+  background-color: #5a2d0c;
+  color: white;
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+}
+
+.explore-header {
+  font-size: 3rem;
+  font-weight: 900;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .goals-content {

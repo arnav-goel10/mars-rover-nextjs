@@ -79,6 +79,26 @@ const Page = () => {
         perView: 4,
         spacing: 15,
       },
+      breakpoints: {
+        "(max-width: 480px)": {
+          slides: {
+            perView: 1, // Show 1 image for screens less than 480px
+            spacing: 10, // Adjust spacing
+          },
+        },
+        "(min-width: 481px) and (max-width: 899px)": {
+          slides: {
+            perView: 2, // Show 2 images for screens between 480px and 768px
+            spacing: 10, // Adjust spacing
+          },
+        },
+        "(min-width: 900px) and (max-width: 1000px)": {
+          slides: {
+            perView: 3, // Show 3 images for screens between 768px and 900px
+            spacing: 10, // Adjust spacing
+          },
+        },
+      },
     },
     [WheelControls]
   );

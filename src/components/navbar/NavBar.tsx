@@ -65,20 +65,23 @@ const NavBar = () => {
                 <NavDropdown.Item as={Link} href="/subsystems/delivery">
                   Delivery
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} href="/subsystems/robotic_arm">
+                <NavDropdown.Item as={Link} href="/subsystems/robotic-arm">
                   Robotic Arm
                 </NavDropdown.Item>
                 <NavDropdown.Item as={Link} href="/subsystems/science">
                   Science
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} href="/subsystems/communication">
-                  Communication
+                <NavDropdown.Item
+                  as={Link}
+                  href="/subsystems/gnss-and-communication"
+                >
+                  GNSS & Communication
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} href="/subsystems/business">
-                  Business
-                </NavDropdown.Item>
-                <NavDropdown.Item as={Link} href="/subsystems/public_relations">
-                  Public Relations
+                <NavDropdown.Item
+                  as={Link}
+                  href="/subsystems/business-and-media"
+                >
+                  Business and Media
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Item>

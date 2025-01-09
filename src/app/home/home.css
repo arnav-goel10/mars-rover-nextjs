@@ -263,12 +263,14 @@ section {
 
 details {
   border: 1px solid #ffffff;
+  background-color: #000000;
   border-radius: 4px;
   padding: 0.5em 0.5em 0;
   color: #ffffff;
 }
 
 summary {
+  background-color: #000000;
   font-weight: bold;
   margin: -0.5em -0.5em 0;
   padding: 0.5em;
@@ -280,6 +282,7 @@ details[open] {
 }
 
 details[open] summary {
+  background-color: #000000;
   border-bottom: 1px solid #ffffff;
   margin-bottom: 0.5em;
   color: #ffffff;
@@ -293,7 +296,7 @@ details[open] summary {
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Align details to the left */
-  margin: 0 auto 0 15%; /* Center the container */
+  margin: 15% auto 17% 15%; /* Center the container */
   padding: 20px;
   max-height: 80vh;
   max-width: 800px; /* Set a width limit */

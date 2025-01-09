@@ -149,6 +149,29 @@ const Page = () => {
     }
   }, []);
 
+  useEffect(() => {
+    const faqContainer = document.querySelector(".faq-container");
+    if (faqContainer) {
+      faqContainer.addEventListener("click", (event) => {
+        const target = event.target as HTMLElement;
+        if (target.tagName === "SUMMARY") {
+          const allDetails = faqContainer.querySelectorAll("details");
+          allDetails.forEach((detail) => {
+            if (detail !== target.parentElement) {
+              detail.removeAttribute("open");
+            }
+          });
+        }
+      });
+    }
+
+    return () => {
+      if (faqContainer) {
+        faqContainer.removeEventListener("click", () => {});
+      }
+    };
+  }, []);
+
   return (
     <>
       <NavBar />
@@ -312,8 +335,8 @@ const Page = () => {
                 wind.
               </li>
               <li>
-                Testing technologies that could support future human
-                exploration, such as oxygen generation
+                Testing technologies for future human exploration, like oxygen
+                generation
               </li>
             </details>
             <details>

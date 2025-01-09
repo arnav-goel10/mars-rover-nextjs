@@ -37,6 +37,10 @@
   background-color: rgba(70, 68, 68, 0.45); /* Dark grey background on hover */
 }
 
+.custom-nav-link .dropdown-menu {
+  text-align: center; /* Center align all text */
+}
+
 @media (max-width: 767px) {
   .nav-item .nav-link:hover::before {
     background-color: transparent; /* Remove background highlight on hover for mobile devices */

@@ -311,9 +311,10 @@ const Page = () => {
             <details>
               <summary>How does the rover communicate with Earth?</summary>
               The rover communicates via radio signals sent through relay
-              satellites orbiting Mars, which then transmit data to NASA’s Deep
-              Space Network on Earth. Depending on the distance between Mars and
-              Earth, communication can take anywhere from 4 to 24 minutes.
+              satellites orbiting Mars, which then transmit data to NASA&apos;s
+              Deep Space Network on Earth. Depending on the distance between
+              Mars and Earth, communication can take anywhere from 4 to 24
+              minutes.
             </details>
 
             <details>

@@ -153,6 +153,7 @@ section {
 .goals-content {
   width: 100%;
   max-width: 800px;
+  max-height: 80%;
   text-align: left;
   padding: 20px;
   z-index: 2;

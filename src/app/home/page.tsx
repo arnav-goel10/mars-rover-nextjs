@@ -5,20 +5,81 @@ import Footer from "@/components/footer/Footer";
 import NavBar from "@/components/navbar/NavBar";
 import Link from "next/link";
 import "keen-slider/keen-slider.min.css";
-import { useKeenSlider } from "keen-slider/react";
+import { useKeenSlider, KeenSliderPlugin } from "keen-slider/react";
 import Image from "next/image";
+
+const WheelControls: KeenSliderPlugin = (slider) => {
+  let touchTimeout: ReturnType<typeof setTimeout>;
+  let position: {
+    x: number;
+    y: number;
+  };
+  let wheelActive: boolean;
+
+  function dispatch(e: WheelEvent, name: string) {
+    position.x -= e.deltaX;
+    position.y -= e.deltaY;
+    slider.container.dispatchEvent(
+      new CustomEvent(name, {
+        detail: {
+          x: position.x,
+          y: position.y,
+        },
+      })
+    );
+  }
+
+  function wheelStart(e: WheelEvent) {
+    position = {
+      x: e.pageX,
+      y: e.pageY,
+    };
+    dispatch(e, "ksDragStart");
+  }
+
+  function wheel(e: WheelEvent) {
+    dispatch(e, "ksDrag");
+  }
+
+  function wheelEnd(e: WheelEvent) {
+    dispatch(e, "ksDragEnd");
+  }
+
+  function eventWheel(e: WheelEvent) {
+    e.preventDefault();
+    if (!wheelActive) {
+      wheelStart(e);
+      wheelActive = true;
+    }
+    wheel(e);
+    clearTimeout(touchTimeout);
+    touchTimeout = setTimeout(() => {
+      wheelActive = false;
+      wheelEnd(e);
+    }, 50);
+  }
+
+  slider.on("created", () => {
+    slider.container.addEventListener("wheel", eventWheel, {
+      passive: false,
+    });
+  });
+};
 
 const Page = () => {
   const [showFooter, setShowFooter] = useState(false);
 
-  const [sliderRef, slider] = useKeenSlider<HTMLDivElement>({
-    loop: true,
-    mode: "free-snap",
-    slides: {
-      perView: 4,
-      spacing: 15,
+  const [sliderRef, slider] = useKeenSlider<HTMLDivElement>(
+    {
+      loop: true,
+      mode: "free-snap",
+      slides: {
+        perView: 4,
+        spacing: 15,
+      },
     },
-  });
+    [WheelControls]
+  );
 
   const images = [
     { src: "/images/mars1.jpg", alt: "Mars Rover 1" },

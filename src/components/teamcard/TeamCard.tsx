@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import "./teamcard.css";
 import { StaticImageData } from "next/image";
 
@@ -6,37 +7,22 @@ interface TeamCardProps {
   image: string | StaticImageData;
   name: string;
   designation: string;
-  linkedin?: string;
 }
 
-const TeamCard: React.FC<TeamCardProps> = ({
-  image,
-  name,
-  designation,
-  linkedin,
-}) => {
+const TeamCard: React.FC<TeamCardProps> = ({ image, name, designation }) => {
   return (
-    <div className="team-card-container" style={{ marginTop: "100px" }}>
-      <div className="team-card-wrapper">
-        <div className="team-card">
-          <div
-            className="team-card-front"
-            style={{
-              backgroundImage: `url(${image})`,
-            }}
-          >
-            <div className="team-card-name">{name}</div>
-          </div>
-          <div className="team-card-back">
-            <div>
-              <p>{designation}</p>
-              {linkedin && (
-                <a href={linkedin} target="_blank" rel="noopener noreferrer">
-                  LinkedIn
-                </a>
-              )}
-            </div>
-          </div>
+    <div className="team-card">
+      <div className="image-container">
+        <Image
+          src={image}
+          alt={name}
+          className="team-card-image"
+          layout="fill"
+          objectFit="cover"
+        />
+        <div className="black-box">
+          <h3 className="team-card-name">{name}</h3>
+          <p className="team-card-designation">{designation}</p>
         </div>
       </div>
     </div>

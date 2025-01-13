@@ -1,9 +1,156 @@
-.team-heading {
-  font-weight: 900;
-  font-size: 50px;
-  line-height: 1;
-  color: red;
-  text-align: left;
+/* Navbar Animation */
+.navbar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.navbar-wrapper.hidden {
+  transform: translateY(-100%); /* Slide out */
+  opacity: 0; /* Fade out */
+  pointer-events: none; /* Disable interactions */
+}
+
+.navbar-wrapper.visible {
+  transform: translateY(0); /* Slide in */
+  opacity: 1; /* Fully visible */
+}
+
+/* General Team Section Styles */
+.team-section {
   background-color: black;
-  margin: auto;
+  color: white;
+  padding: 50px 20px;
+  margin-top: 10%;
+}
+
+/* Container for Team Heading and Description */
+.team-container {
+  max-width: 70%;
+  margin-left: 13%;
+  padding: 0 20px;
+  text-align: left;
+  margin-bottom: 50px; /* Add spacing between the description and the grid */
+}
+
+/* Team Heading Styles */
+.team-heading h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 0 0 2rem 0;
+}
+
+/* Team Description Styles */
+.team-description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Wrapper for the Team Members Grid */
+.team-members-wrapper {
+  max-width: 94%; /* Limit the wrapper width */
+  margin: 0 auto; /* Center the wrapper horizontally */
+  background-color: #562b11;
+  padding-left: 100px;
+  border-radius: 10px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  display: flex; /* Use flexbox to center the grid */
+  justify-content: center; /* Center grid horizontally */
+  align-items: center; /* Center grid vertically (optional) */
+}
+
+/* Grid for Team Members */
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* Maximum 3 columns */
+  gap: 20px; /* Equal spacing between rows and columns */
+  row-gap: 100px; /* Adds vertical spacing between rows */
+  width: 100%; /* Ensure grid takes up full wrapper width */
+  max-width: 1200px; /* Optional: limit the grid's maximum width */
+}
+
+/* Responsive Grid Adjustments */
+@media (max-width: 900px) {
+  .team-members {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .team-members {
+    grid-template-columns: 1fr; /* Single column for small screens */
+  }
+}
+
+/* General Team Section Styles */
+.team-section {
+  background-color: black;
+  color: white;
+  padding: 50px 20px;
+  margin-top: 10%;
+}
+
+/* Container for Team Heading and Description */
+.team-container {
+  max-width: 70%;
+  margin-left: 13%;
+  padding: 0 20px;
+  text-align: left;
+  margin-bottom: 50px; /* Add spacing between the description and the grid */
+}
+
+/* Team Heading Styles */
+.team-heading h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 0 0 2rem 0;
+}
+
+/* Team Description Styles */
+.team-description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Wrapper for the Team Members Grid */
+.team-members-wrapper {
+  max-width: 94%; /* Limit the wrapper width */
+  margin: 0 auto; /* Center the wrapper horizontally */
+  background-color: #562b11;
+  padding-left: 100px;
+  border-radius: 10px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  display: flex; /* Use flexbox to center the grid */
+  justify-content: center; /* Center grid horizontally */
+  align-items: center; /* Center grid vertically (optional) */
+}
+
+/* Grid for Team Members */
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* Maximum 3 columns */
+  gap: 20px; /* Equal spacing between rows and columns */
+  row-gap: 100px; /* Adds vertical spacing between rows */
+  width: 100%; /* Ensure grid takes up full wrapper width */
+  max-width: 1200px; /* Optional: limit the grid's maximum width */
+}
+
+/* Responsive Grid Adjustments */
+@media (max-width: 900px) {
+  .team-members {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .team-members {
+    grid-template-columns: 1fr; /* Single column for small screens */
+  }
 }

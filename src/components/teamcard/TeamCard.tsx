@@ -17,8 +17,10 @@ const TeamCard: React.FC<TeamCardProps> = ({ image, name, designation }) => {
           src={image}
           alt={name}
           className="team-card-image"
-          layout="fill"
-          objectFit="cover"
+          fill
+          style={{
+            objectFit: "cover",
+          }}
         />
         <div className="black-box">
           <h3 className="team-card-name">{name}</h3>

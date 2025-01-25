@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "@/components/starbg/starbg.css";
 import "./contact.css";
 import Footer from "@/components/footer/Footer";
+import NavBar from "@/components/navbar/NavBar";
 
 const Contact: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -74,6 +75,7 @@ const Contact: React.FC = () => {
 
   return (
     <>
+      <NavBar/>
       <div className="starry-background">
         <div id="stars"></div>
         <div id="stars2"></div>

@@ -351,7 +351,6 @@ details[open] summary {
   background: rgba(0, 0, 0, 0.65);
   z-index: 1;
   max-height: 100vh;
-
 }
 
 .faq-container {
@@ -369,7 +368,6 @@ details[open] summary {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-
   .who-content {
     font-size: 2rem;
     max-width: 90%;
@@ -414,7 +412,7 @@ details[open] summary {
 
 @media (max-width: 480px) {
   .who-content {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     max-width: 95%;
     margin: 25% auto auto 5%;
   }

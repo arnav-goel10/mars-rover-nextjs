@@ -369,6 +369,18 @@ details[open] summary {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+
+  .who-content {
+    font-size: 2rem;
+    max-width: 90%;
+    margin: 20% auto auto 5%;
+  }
+
+  .who-button {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
   .goals-content {
     max-width: 90%; /* Reduce width for tablets */
     padding: 15px;
@@ -401,6 +413,17 @@ details[open] summary {
 }
 
 @media (max-width: 480px) {
+  .who-content {
+    font-size: 1.5rem;
+    max-width: 95%;
+    margin: 25% auto auto 5%;
+  }
+
+  .who-button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
   .goals-header {
     font-size: 2.5rem;
   }

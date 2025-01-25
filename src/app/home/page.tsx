@@ -205,7 +205,12 @@ const Page = () => {
             NUS Mars Rover Team brings together dedicated individuals from the diverse fields of Engineering, Science,
             Design, and Business to design the next generation of Martian rovers and represent the National University
             of Singapore at international robotics competitions.
+            <br/><br/>
+            <Link href={"/team"} className="who-button">
+              Meet the Team
+            </Link>
           </div>
+
         </section>
 
         <section className="goals-section">

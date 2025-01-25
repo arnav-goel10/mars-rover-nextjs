@@ -136,8 +136,29 @@ section {
   font-weight: 900;
   max-width: 70%;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-top: 10%;
+  margin-bottom: auto;
   margin-left: 11%;
   margin-right: auto;
+}
+
+.who-button {
+  background-color: #e6952e;
+  border: none;
+  margin-top: 1.5rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 15px 19px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.who-button:hover {
+  background-color: #cf7f1e;
 }
 
 .goals-section {
@@ -257,6 +278,7 @@ section {
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-decoration: none;
+  z-index: 2;
 }
 
 .subsystem-button:hover {

@@ -27,7 +27,7 @@ export const teamMembersList = [
     designation: "Mechanical Lead",
   },
   {
-    image: random,
+    image: "/images/Vejaya.jpg",
     name: "Gopal R. Vejaya",
     designation: "Electrical Lead",
   },

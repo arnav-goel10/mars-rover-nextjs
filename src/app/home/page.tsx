@@ -196,10 +196,9 @@ const Page = () => {
           </div>
         </section>
 
-        <section>
-          <div className="content-wrapper">
-            <h2>Test</h2>
-            <p style={{ fontSize: "1.1rem" }}>LOREM IPSUM</p>
+        <section className="who-we-are-section">
+          <div className="goals-header">
+            <h2 style={{ fontWeight: "900" }}>Who We Are</h2>
           </div>
         </section>
 

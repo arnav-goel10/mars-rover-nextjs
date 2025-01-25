@@ -112,6 +112,24 @@ section {
   opacity: 0.8;
 }
 
+.who-we-are-section {
+  position: relative;
+  background-image: url("../../images/who-we-are.webp");
+}
+
+.who-we-are-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+/*  background: rgba(86, 43, 17, 0.85);*/
+  background: rgba(135,54,26,0.7);
+  z-index: 1;
+  max-height: 100vh;
+}
+
 .goals-section {
   position: relative;
   background-color: #000000;

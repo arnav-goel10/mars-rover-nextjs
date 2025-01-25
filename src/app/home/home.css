@@ -136,10 +136,7 @@ section {
   font-weight: 900;
   max-width: 70%;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  margin-top: 10%;
-  margin-bottom: auto;
-  margin-left: 11%;
-  margin-right: auto;
+  margin: 10% auto auto 11%;
 }
 
 .who-button {
@@ -393,7 +390,7 @@ details[open] summary {
   }
 
   .goals-content {
-    max-width: 95%; /* Further reduce width for small phones */
+    /* Further reduce width for small phones */
     padding: 10px;
     margin-top: -30px;
     margin-right: 10px;

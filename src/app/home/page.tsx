@@ -1,11 +1,11 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 import "./home.css";
 import Footer from "@/components/footer/Footer";
 import NavBar from "@/components/navbar/NavBar";
 import Link from "next/link";
 import "keen-slider/keen-slider.min.css";
-import { useKeenSlider, KeenSliderPlugin } from "keen-slider/react";
+import {useKeenSlider, KeenSliderPlugin} from "keen-slider/react";
 import Image from "next/image";
 
 const WheelControls: KeenSliderPlugin = (slider) => {
@@ -104,11 +104,11 @@ const Page = () => {
   );
 
   const images = [
-    { src: "/images/mars1.jpg", alt: "Mars Rover 1" },
-    { src: "/images/mars2.jpg", alt: "Mars Rover 2" },
-    { src: "/images/mars3.jpg", alt: "Mars Rover 3" },
-    { src: "/images/mars4.jpg", alt: "Mars Rover 4" },
-    { src: "/images/mars5.jpg", alt: "Mars Rover 5" },
+    {src: "/images/mars1.jpg", alt: "Mars Rover 1"},
+    {src: "/images/mars2.jpg", alt: "Mars Rover 2"},
+    {src: "/images/mars3.jpg", alt: "Mars Rover 3"},
+    {src: "/images/mars4.jpg", alt: "Mars Rover 4"},
+    {src: "/images/mars5.jpg", alt: "Mars Rover 5"},
   ];
 
   useEffect(() => {
@@ -167,19 +167,20 @@ const Page = () => {
 
     return () => {
       if (faqContainer) {
-        faqContainer.removeEventListener("click", () => {});
+        faqContainer.removeEventListener("click", () => {
+        });
       }
     };
   }, []);
 
   return (
     <>
-      <NavBar />
+      <NavBar/>
       <div id="scroll">
         <section className="mars-section">
           <div className="content-wrapper">
             <h1 className="mars-heading">
-              Designing the <br />
+              Designing the <br/>
               Future of Martian Rovers
             </h1>
             <p className="mars-subheading">
@@ -198,13 +199,18 @@ const Page = () => {
 
         <section className="who-we-are-section">
           <div className="goals-header">
-            <h2 style={{ fontWeight: "900" }}>Who We Are</h2>
+            <h2 style={{fontWeight: "900"}}>Who We Are</h2>
+          </div>
+          <div className="who-content">
+            NUS Mars Rover Team brings together dedicated individuals from the diverse fields of Engineering, Science,
+            Design, and Business to design the next generation of Martian rovers and represent the National University
+            of Singapore at international robotics competitions.
           </div>
         </section>
 
         <section className="goals-section">
           <div className="goals-header">
-            <h2 style={{ fontWeight: "900" }}>Our Goals</h2>
+            <h2 style={{fontWeight: "900"}}>Our Goals</h2>
           </div>
           <div className="goals-content">
             <h2 className="section-title">Mission</h2>
@@ -235,17 +241,17 @@ const Page = () => {
 
         <section className="subsystems-section">
           <div className="goals-header">
-            <h2 style={{ fontWeight: "900" }}>Our Subsystems</h2>
+            <h2 style={{fontWeight: "900"}}>Our Subsystems</h2>
           </div>
           <div className="subsystems-grid">
             {[
-              { title: "Autonomous Navigation", link: "/subsystems/autonav" },
-              { title: "Delivery Subsystem", link: "/subsystems/delivery" },
+              {title: "Autonomous Navigation", link: "/subsystems/autonav"},
+              {title: "Delivery Subsystem", link: "/subsystems/delivery"},
               {
                 title: "Robotic Arm Subsystem",
                 link: "/subsystems/robotic-arm",
               },
-              { title: "Science Subsystem", link: "/subsystems/science" },
+              {title: "Science Subsystem", link: "/subsystems/science"},
               {
                 title: "GNSS and Communications",
                 link: "/subsystems/gnss-and-communication",
@@ -276,7 +282,7 @@ const Page = () => {
                   width={400}
                   height={300}
                   className="carousel-image"
-                  style={{ objectFit: "contain" }}
+                  style={{objectFit: "contain"}}
                 />
               </div>
             ))}
@@ -285,7 +291,7 @@ const Page = () => {
 
         <section className="faq-section">
           <div className="goals-header">
-            <h2 style={{ fontWeight: "900" }}>FAQ</h2>
+            <h2 style={{fontWeight: "900"}}>FAQ</h2>
           </div>
           <div className="faq-container">
             <details>
@@ -368,7 +374,7 @@ const Page = () => {
           </div>
         </section>
 
-        <Footer isVisible={showFooter} />
+        <Footer isVisible={showFooter}/>
       </div>
     </>
   );

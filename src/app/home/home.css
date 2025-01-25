@@ -124,10 +124,20 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-/*  background: rgba(86, 43, 17, 0.85);*/
-  background: rgba(135,54,26,0.7);
+  background: rgba(86, 43, 17, 0.8);
   z-index: 1;
   max-height: 100vh;
+}
+
+.who-content {
+  color:white;
+  font-size: 40px;
+  z-index: 2;
+  font-weight: 900;
+  max-width: 70%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-left: 11%;
+  margin-right: auto;
 }
 
 .goals-section {

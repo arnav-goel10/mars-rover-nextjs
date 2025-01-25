@@ -2,7 +2,7 @@ import random from "../images/random.png";
 
 export const teamMembersList = [
   {
-    image: random,
+    image: "/images/eugene.png",
     name: "Mr. Eugene Ee",
     designation: "Project Supervisor",
   },
@@ -17,12 +17,12 @@ export const teamMembersList = [
     designation: "Team Lead",
   },
   {
-    image: random,
+    image: "/images/Vaibhav.jpg",
     name: "Vaibhav Dileep Pillai",
     designation: "Dy Team Lead, Software Lead",
   },
   {
-    image: random,
+    image: "/images/Saksham.jpg",
     name: "Saksham Mathur",
     designation: "Mechanical Lead",
   },
@@ -32,17 +32,17 @@ export const teamMembersList = [
     designation: "Electrical Lead",
   },
   {
-    image: random,
+    image: "/images/Yongjing.png",
     name: "Pan Yongjing",
     designation: "GNSS & Comms Lead",
   },
   {
-    image: random,
+    image: "/images/Shyam_Krishna.jpg",
     name: "Shyam Krishna",
     designation: "AutoNav Lead",
   },
   {
-    image: random,
+    image: "/images/Jian_Ling.jpg",
     name: "Jian Ling",
     designation: "Science Lead",
   },
@@ -53,7 +53,7 @@ export const teamMembersList = [
   },
   {
     image: random,
-    name: "Parv Bhadra",
+    name: "Akash Mukherjee",
     designation: "Chassis Lead",
   },
   {
@@ -62,7 +62,7 @@ export const teamMembersList = [
     designation: "Wheels Lead",
   },
   {
-    image: random,
+    image: "/images/Jia_Xuan.jpg",
     name: "Tai Jia Xuan",
     designation: "Chemistry Lead",
   },

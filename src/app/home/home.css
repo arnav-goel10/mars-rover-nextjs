@@ -130,7 +130,7 @@ section {
 }
 
 .who-content {
-  color:white;
+  color: white;
   font-size: 40px;
   z-index: 2;
   font-weight: 900;
@@ -338,6 +338,20 @@ details[open] summary {
 
 .faq-section {
   position: relative;
+  background-image: url("../../images/faq.png");
+}
+
+.faq-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+  max-height: 100vh;
+
 }
 
 .faq-container {
@@ -350,6 +364,7 @@ details[open] summary {
   max-width: 800px; /* Set a width limit */
   gap: 2rem; /* Adjust spacing between details */
   overflow: scroll;
+  z-index: 2;
 }
 
 /* Responsive Styles */

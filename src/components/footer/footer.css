@@ -12,6 +12,7 @@
   transition: transform 0.5s ease-out, opacity 0.5s ease-out;
   transform: translateY(100%); /* Initially hidden */
   opacity: 0; /* Initially hidden */
+  z-index: 2;
 }
 
 .footer.show {

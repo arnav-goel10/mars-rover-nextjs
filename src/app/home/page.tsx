@@ -250,7 +250,7 @@ const Page = () => {
           </div>
           <div className="subsystems-grid">
             {[
-              {title: "Autonomous Navigation Subsystem", link: "/subsystems/autonav"},
+              {title: "Autonomous Navigation", link: "/subsystems/autonav"},
               {title: "Delivery Subsystem", link: "/subsystems/delivery"},
               {
                 title: "Robotic Arm Subsystem",
@@ -258,7 +258,7 @@ const Page = () => {
               },
               {title: "Science Subsystem", link: "/subsystems/science"},
               {
-                title: "GNSS and Communications Subsystem",
+                title: "GNSS and Communications",
                 link: "/subsystems/gnss-and-communication",
               },
               {

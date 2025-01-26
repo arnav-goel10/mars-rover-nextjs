@@ -187,10 +187,10 @@ const Page = () => {
               Bringing Innovative Solutions for Mars Exploration
             </p>
             <div className="button-group">
-              <Link href="/contact" className="button button-dark">
+              <Link href={"/contact"} className="button button-dark">
                 Join Us
               </Link>
-              <Link href="/subsystems" className="button button-outline">
+              <Link href={"/subsystems"} className="button button-outline">
                 Explore Our Subsystems
               </Link>
             </div>

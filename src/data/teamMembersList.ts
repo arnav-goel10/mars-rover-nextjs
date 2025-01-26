@@ -12,7 +12,7 @@ export const teamMembersList = [
     designation: "Project Supervisor",
   },
   {
-    image: random,
+    image: "/images/arshita.jpg",
     name: "Arshita Dwivedi",
     designation: "Team Lead",
   },
@@ -33,7 +33,7 @@ export const teamMembersList = [
   },
   {
     image: "/images/Yongjing.png",
-    name: "Pan Yongjing",
+    name: "Yongjing Pan",
     designation: "GNSS & Comms Lead",
   },
   {
@@ -44,7 +44,7 @@ export const teamMembersList = [
   {
     image: "/images/Jian_Ling.jpg",
     name: "Jian Ling",
-    designation: "Science Lead",
+    designation: "Science (Engineering) Lead",
   },
   {
     image: random,
@@ -54,7 +54,7 @@ export const teamMembersList = [
   {
     image: random,
     name: "Akash Mukherjee",
-    designation: "Chassis Lead",
+    designation: "Chassis & Suspensions Lead",
   },
   {
     image: random,
@@ -63,12 +63,22 @@ export const teamMembersList = [
   },
   {
     image: "/images/Jia_Xuan.jpg",
-    name: "Tai Jia Xuan",
-    designation: "Chemistry Lead",
+    name: "Jia Xuan",
+    designation: "Science (Chemistry) Lead",
   },
   {
     image: random,
     name: "Jin",
     designation: "Spectroscopy Lead",
   },
+  {
+    image: random,
+    name: "Aarav Bindawala",
+    designation: "Deputy Suspensions Lead"
+  },
+  {
+    image: random,
+    name: "Parv Bhadra",
+    designation: "Deputy Chassis Lead"
+  }
 ];

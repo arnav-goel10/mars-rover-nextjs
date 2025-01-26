@@ -251,12 +251,12 @@ const Page = () => {
           <div className="subsystems-grid">
             {[
               {title: "Autonomous Navigation", link: "/subsystems/autonav"},
-              {title: "Delivery Subsystem", link: "/subsystems/delivery"},
+              {title: "Delivery", link: "/subsystems/delivery"},
               {
-                title: "Robotic Arm Subsystem",
+                title: "Robotic Arm",
                 link: "/subsystems/robotic-arm",
               },
-              {title: "Science Subsystem", link: "/subsystems/science"},
+              {title: "Science", link: "/subsystems/science"},
               {
                 title: "GNSS and Communications",
                 link: "/subsystems/gnss-and-communication",

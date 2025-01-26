@@ -250,19 +250,19 @@ const Page = () => {
           </div>
           <div className="subsystems-grid">
             {[
-              {title: "Autonomous Navigation", link: "/subsystems/autonav"},
-              {title: "Delivery", link: "/subsystems/delivery"},
+              {title: "Autonomous Navigation Subsystem", link: "/subsystems/autonav"},
+              {title: "Delivery Subsystem", link: "/subsystems/delivery"},
               {
-                title: "Robotic Arm",
+                title: "Robotic Arm Subsystem",
                 link: "/subsystems/robotic-arm",
               },
-              {title: "Science", link: "/subsystems/science"},
+              {title: "Science Subsystem", link: "/subsystems/science"},
               {
-                title: "GNSS and Communications",
+                title: "GNSS and Communications Subsystem",
                 link: "/subsystems/gnss-and-communication",
               },
               {
-                title: "Business and Media",
+                title: "Business and Media Subsystem",
                 link: "/subsystems/business-and-media",
               },
             ].map((subsystem, index) => (
